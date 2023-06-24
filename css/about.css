@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* font props */
+.about{
+    font-family: 'Lalezar', cursive;
+    font-weight: 200;
+    font-size: larger;
+    }
+
+/* displaying */
+
+.about-id-title , .about-TP-title,.experience-title{
+    margin-top: 3vh;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, #000736, #00a7c8);
+    -webkit-text-stroke: 1px #000736;
+    -moz-text-stroke: 1px #000736;
+    -ms-text-stroke: 1px #000736;
+    animation: glow-animation 2s infinite;
+    color: #ff9100;
+  }
+  
+  @keyframes glow-animation {
+    0% {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #00a7c8, 0 0 40px #00a7c8, 0 0 50px #00a7c8, 0 0 60px #00a7c8, 0 0 70px #00a7c8;
+    }
+    50% {
+      text-shadow: none;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #00a7c8, 0 0 40px #00a7c8, 0 0 50px #00a7c8, 0 0 60px #00a7c8, 0 0 70px #00a7c8;
+    }
+  }
+  
+
+  .about-id-container {
+    position: relative;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+
+.about-id-animation{
+position: absolute;
+margin:10%;
+top :20vh;
+}
+
+.about-id-paragraphs-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  
+  .about-id-paragraphs {
+    margin-top:5rem ;
+    flex: 0 0 calc(50% - 8rem);
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #ffffff8e;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+    transition: all 0.3s ease;
+    z-index: 5;
+    background:#000736af;
+    color: #fff;
+  }
+  
+  .about-id-paragraphs:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background:#000736;
+
+
+  }
+  
+.about-id-paragraphs-container .about-id-paragraphs:nth-child(5) {
+ 
+position: relative;
+bottom: 0;
+right: 27.5%;
+width: 100%;
+}  
+
+.about-id-paragraphs::before{
+    content: '-';
+    margin: 0.5rem;
+    font-size: larger;
+
+}
+
+.teaching-philosophy-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.concept {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 6;
+  color: aliceblue;
+  border: 2px dashed #fff;
+}
+
+.concept:hover {
+  transform: translateY(-5px);
+    transform: scale(1.05);
+    background:#000736af;
+    border: 2px dashed orange;
+
+
+}
+

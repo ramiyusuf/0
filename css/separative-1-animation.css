@@ -1,0 +1,63 @@
+@keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .separative-animation-1{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    -webkit-text-stroke: 1px #fff;
+  -moz-text-stroke: 1px #fff;
+  -ms-text-stroke: 1px #fff;
+
+  }
+  
+  .separative-animation-1 {
+    position: relative;
+    z-index: 6;
+    width: 100vw;
+    height: 30vw;
+    line-height: 30vw;
+    text-align: center;
+    color: #373425;
+    background: linear-gradient(to right, #1b0625, #005e70);
+    animation: textColor 3s ease infinite;
+    
+  }
+   
+   .separative-animation-1:after {
+    position: absolute;
+    content: "";
+    top: vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.75);
+    filter: blur(5vw);
+    background-color: #fff;
+    animation: animateGlow 3s ease-in-out infinite;
+  } 
+  
+  @keyframes textColor {
+    0% {
+      color: #ffd30f;
+    }
+    50% {
+      color: #0fefff;
+    }
+    100% {
+      color: #ffd30f;
+    }
+  }
+  

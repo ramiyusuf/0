@@ -1,0 +1,40 @@
+/* fixed position */
+#navbar {
+    position: fixed;
+    top: 20px;
+    z-index: 100;
+  }
+  
+  /* font props */
+  .navbar {
+    font-family: 'Lalezar', cursive;
+    font-weight: 200;
+    font-size: larger;
+    color: aliceblue;
+  }
+  
+  /* displaying of navbar */
+  .navbar {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to left, #142073, #00a7c8);
+  }
+  
+  /* displaying of links */
+  .navbar-links {
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 5px;
+  }
+  
+  /* hover effect on navbar links */
+  .navbar-links:hover {
+    color: #ff914d;
+    background-color: rgba(0, 167, 200, 0.8);
+  }
+  
